@@ -1,0 +1,43 @@
+/* Structure*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(images/sunset.jpeg);
+    background-size: cover;
+}
+
+#content {
+    background: lightblue;
+    width: 70%;
+    margin: auto; /* center */
+    padding: 1%;
+    border-radius: 5px; /* round corners */
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 2px solid darkviolet;
+    padding: 5px 10px; /* top/bottom left/right */
+    background: pink;
+}
+
+th {
+    background: orchid;
+}
+
+/* Images */
+#chloe {
+    margin: 10px 0px;
+    box-shadow: 5px 5px slategray;
+}
+
+/* Typography */
+h1 {
+    color: blueviolet;
+}
+h2 {
+    color: darkmagenta;
+}
