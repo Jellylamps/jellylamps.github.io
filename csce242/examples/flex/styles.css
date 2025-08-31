@@ -1,0 +1,76 @@
+body {
+    background: #6b9747;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content {
+    width: 95%;
+    margin: auto;
+    background-color: #ffffffb0;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#core-header {
+    /* background: #6b9747; */
+    color: rgb(112, 29, 1);
+}
+
+/* Core Navigation */
+#core-nav ul {
+    list-style-type: none; /* removes bullets */
+    padding-left: 0px;
+}
+
+#core-nav li {
+    border-bottom: 1px solid #d39e16;
+}
+#core-nav li:first-child {
+    border-top: 1px solid #d39e16;
+}
+
+#core-nav a {
+    color: #d39e16;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0px;
+}
+
+#core-nav a:hover {
+    background: #ffffff88
+}
+
+/* Typography */
+h1 {
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        background: url(images/tree.jpg);
+        background-size: cover;
+    }
+
+    #content {
+        width: 70%;
+    }
+
+    /* Columns */
+    .columns {
+        display: flex;
+    }
+
+    /* Core Nav */
+    #core-nav li {
+        flex: 1;
+        text-align: center;
+    }
+
+    #core-nav li, #core-nav li:first-child {
+        border: none;
+    }
+
+    #core-nav a {
+        padding: 5px;
+    }
+}
