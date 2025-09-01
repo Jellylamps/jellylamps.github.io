@@ -58,7 +58,7 @@ h2 {
 
 
 /* Larger Screens */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 850px) {
     body {
         background: url("images/sunset.jpeg");
         background-size: cover;
