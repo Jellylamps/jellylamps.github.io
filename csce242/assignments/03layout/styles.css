@@ -1,0 +1,117 @@
+html {
+    border: solid 1px #a4bfb8;
+    min-height: 100%;
+}
+
+body {
+    width: 100%;
+    position: relative;
+    left: -8px;
+    background: #f2f1d5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content {
+    color: #608588;
+}
+
+#header-nav ul {
+    list-style: none;
+    background-color: #a4bfb8;
+    padding-left: 0px;
+}
+
+#header-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+#header-nav li {
+    background: #d88281;
+    flex: 1;
+    margin: 1px;
+    text-align: center;
+}
+
+#ideas {
+    flex-wrap: wrap;
+}
+
+section {
+    margin: auto;
+}
+
+img {
+    display: block;
+    margin: auto
+}
+
+.one {
+    flex: 1;
+}
+.two {
+    flex: 2;
+}
+.three {
+    flex: 3;
+}
+.four {
+    flex: 4;
+}
+
+#idea {
+    display: block;
+    padding-bottom: 10px;
+    width: 50%;
+    margin: 0px;
+    position: relative;
+    top: -16px;
+}
+
+#idea div {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+#idea h2 {
+    padding: 10px;
+}
+
+#idea p {
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.hide-portrait {
+    display: none;
+}
+
+
+@media only screen and (orientation: landscape) {
+    .columns {
+        display: flex;
+    }
+
+    #ideas {
+        flex-wrap: wrap;
+    }
+
+    #idea img {
+        max-width: 25%;
+        margin: 0px;
+    }
+
+    #idea div div {
+        margin: 0px;
+    }
+
+    .hide-portrait {
+        display: flex;
+    }
+}
