@@ -64,7 +64,6 @@ img {
 #idea {
     display: block;
     padding-bottom: 10px;
-    width: 50%;
     margin: 0px;
     position: relative;
     top: -16px;
@@ -100,6 +99,10 @@ h1 {
 
     #ideas {
         flex-wrap: wrap;
+    }
+
+    #idea {
+        width: 50%;
     }
 
     #idea img {
