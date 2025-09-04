@@ -141,10 +141,6 @@ footer {
     flex: 4;
 }
 
-.hide-portrait {
-    display: none;
-}
-
 
 /* **For sufficiently large screens wider than their height** */
 @media only screen and (orientation: landscape) and (min-width: 768px) {
@@ -202,9 +198,5 @@ footer {
         position: relative;
         top: -16px;
         margin: 0px;
-    }
-
-    .hide-portrait {
-        display: flex;
     }
 }
