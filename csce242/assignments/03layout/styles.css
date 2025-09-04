@@ -1,6 +1,6 @@
+/* **Broad Formatting** */
 html {
     border: solid 1px #a4bfb8;
-    min-height: 100%;
 }
 
 body {
@@ -15,6 +15,16 @@ body {
     color: #608588;
 }
 
+h1 {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: auto
+}
+
+/* **Header** */
 #header-nav ul {
     list-style: none;
     background-color: #a4bfb8;
@@ -35,38 +45,16 @@ body {
     text-align: center;
 }
 
+/* **Main** */
+/* Ideas */
 #ideas {
     flex-wrap: wrap;
-}
-
-section {
-    margin: auto;
-}
-
-img {
-    display: block;
-    margin: auto
-}
-
-.one {
-    flex: 1;
-}
-.two {
-    flex: 2;
-}
-.three {
-    flex: 3;
-}
-.four {
-    flex: 4;
 }
 
 #idea {
     display: block;
     padding-bottom: 10px;
     margin: 0px;
-    position: relative;
-    top: -16px;
 }
 
 #idea div {
@@ -83,8 +71,74 @@ img {
     padding: 10px;
 }
 
-h1 {
+/* Grid */
+#grid {
+    min-height:min-content
+}
+
+#links {
+    background: #d88281;
+    color: #ffffff;
+    padding: 10px;
+    margin: 5px;
+    margin-top: 0px;
+}
+
+#links ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+#links a {
+    color: #ffffff;
+}
+
+.grid-card {
+    color: #ffffff;
+    padding: 5px;
+    margin: 5px;
+}
+
+.grid-card img {
+    width: 100%;
+}
+
+#title {
+    background: #608588;
+}
+
+#gallery {
+    background: #a4bfb8;
+}
+
+.grid-card h3 {
     text-align: center;
+}
+
+/* **Footer** */
+footer {
+    color: #ffffff;
+    background: #d88281;
+    padding: 20px;
+    margin-top: 15px;
+    text-align: center;
+    position: relative;
+    top: -8px;
+    box-shadow: 0px 1px #a4bfb8;
+}
+
+/* Flex Classes */
+.one {
+    flex: 1;
+}
+.two {
+    flex: 2;
+}
+.three {
+    flex: 3;
+}
+.four {
+    flex: 4;
 }
 
 .hide-portrait {
@@ -92,9 +146,15 @@ h1 {
 }
 
 
-@media only screen and (orientation: landscape) {
+/* **For sufficiently large screens wider than their height** */
+@media only screen and (orientation: landscape) and (min-width: 768px) {
     .columns {
         display: flex;
+    }
+
+    main {
+        position: relative;
+        top: -16px;
     }
 
     #ideas {
@@ -102,15 +162,45 @@ h1 {
     }
 
     #idea {
-        width: 50%;
+        width: 45%;
     }
-
-    #idea img {
-        max-width: 25%;
-        margin: 0px;
+    #idea:first-of-type {
+        margin-right: 10%;
     }
 
     #idea div div {
+        margin: 0px;
+    }
+
+    #image {
+        max-width: 25%;
+    }
+
+    #image img {
+        max-width: 100%;
+    }
+
+    #titles, #galleries {
+        flex-wrap: wrap;
+        margin: 0px;
+    }
+
+    .grid-card {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    #title {
+        width: calc(50% - 15px);
+    }
+
+    #gallery {
+        width: calc((100% / 3) - 15px);
+    }
+
+    footer {
+        position: relative;
+        top: -16px;
         margin: 0px;
     }
 
