@@ -58,7 +58,7 @@ h2 {
 
 
 /* Larger Screens */
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 768px) and (orientation: landscape) {
     body {
         background: url("images/sunset.jpeg");
         background-size: cover;
@@ -76,7 +76,9 @@ h2 {
     }
 
     .assignment {
-        padding: 5px;
+        max-width: fit-content;
+        padding: 25px;
+        margin: auto;
     }
 
     img {
