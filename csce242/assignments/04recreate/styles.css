@@ -45,20 +45,22 @@ body {
 
 #blurb {
     margin: auto;
-}
-
-#blurb h2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
     color: var(--black);
     text-align: center;
     padding: 25px;
 }
 
-#slideshow {
-    position: relative;
+#blurb div {
+    max-width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-#slideshow img {
-    max-width: 100%;
+#blurb h1 {
+    color: var(--garnet);
 }
 
 #tag {
@@ -68,8 +70,71 @@ body {
     padding-left: 15px;
 }
 
+#quote {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#news {
+    color: var(--garnet);
+    padding: 40px 0;
+}
+
+#news h1 {
+    text-align: center;
+}
+
+#news p {
+    color: var(--black);
+}
+
+#news img {
+    max-width: 100%;
+}
+
+#news .three {
+    margin: 40px 0;
+    padding: 0 40px;
+}
+
+#basics {
+    color: var(--garnet);
+    padding: 20px;
+}
+
+#basics a:not(.button) {
+    color: var(--garnet);
+}
+
+#basics a:hover:not(.button) {
+    color: var(--white);
+}
+
+#basics div:not(:last-child) {
+    border-bottom: solid 1px var(--grey);
+    padding: 20px;
+}
+
+#basics ul.columns li {
+    text-align: center;
+    margin: 15px;
+}
+
+#basics .one {
+    padding: 15px;
+    text-align: center;
+}
+
+#basics .one a {
+    text-decoration: underline;
+}
+
+#basics .one a:hover {
+    text-decoration: none;
+}
+
 ul {
-    padding-left: 0px;
+    padding-left: 0;
     list-style: none;
 }
 
@@ -79,9 +144,42 @@ a {
     margin: 5px;
 }
 
-img {
+img:not(#logo a img) {
     display: block;
     margin: auto;
+}
+
+#links img {
+    margin: 0;
+}
+
+#links div {
+    margin: 20px;
+}
+
+#links div section {
+    margin: 20px;
+}
+
+#links div section:first-child{
+    border-bottom: solid 1px var(--white);
+}
+
+#links ul {
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+#links ul.columns li {
+    width: 45%;
+}
+
+#links li {
+    margin: 5px;
+}
+
+#links #logo {
+    width: fit-content;
 }
 
 .garnet {
@@ -104,12 +202,52 @@ img {
     padding: 20px 50px;
 }
 
+.text-block img {
+    max-width: 90%;
+}
+
+.spacer {
+    height: 20px;
+}
+
+.fullscreen {
+    position: relative;
+}
+
+.fullscreen img {
+    max-width: 100%;
+}
+
+.circle {
+    border-radius: 200px;
+}
+
 .button {
     display: block;
     width: fit-content;
     padding: 15px 20px;
     border: solid 2px var(--white);
-    margin: 10px 0px;
+    margin: 10px 0;
+}
+
+#basics .button {
+    padding: 10px;
+}
+
+#legal {
+    border-top: solid 1px var(--white);
+}
+
+#legal ul {
+    width: fit-content;
+    padding: 5px;
+    padding-top: 10px;
+    margin-left: 3%;
+    flex-wrap: wrap;
+}
+
+#legal li:not(:last-child)::after {
+    content: "|";
 }
 
 .button:hover {
@@ -134,12 +272,30 @@ img {
     flex: 1;
 }
 
+.two {
+    flex: 2;
+}
+
+.three {
+    flex: 3;
+}
+
+.one img, .two img {
+    margin: auto;
+}
+
+.always {
+    display: flex;
+    justify-content: space-around;
+}
+
 
 
 /* **For sufficiently large screens wider than their height** */
 @media only screen and (orientation: landscape) and (min-width: 768px) {
     .columns {
         display: flex;
+        justify-content: space-around;
     }
 
     .landscape-highlight:hover {
@@ -168,6 +324,10 @@ img {
         padding-left: 0;
     }
 
+    #logo {
+        margin-left: 5%;
+    }
+
     #main-nav {
         padding: 15px;
     }
@@ -189,6 +349,13 @@ img {
         padding-right: 5%;
     }
 
+    #overlay {
+        position: absolute;
+        width: 40%;
+        bottom: 10%;
+        right: 5%;
+    }
+
     #blurb {
         width: 50%;
     }
@@ -196,6 +363,56 @@ img {
     .one img {
         width: 100%;
         height: 100%;
+    }
+
+    .two img {
+        margin-right: 85px;
+        margin-left: auto;
+    }
+
+    .three h2, .three h3 {
+        max-width: 70%;
+    }
+
+    #news .three {
+        max-width: 20%;
+    }
+
+    main .three .button {
+        width: 90%;
+        text-align: center;
+    }
+
+    #video img {
+        max-width: 90%;
+        max-height: 90%;
+        position: relative;
+        top: 5%;
+    }
+
+    #basics div:not(:last-child) {
+        border: none;
+        border-right: solid 1px var(--grey);
+    }
+
+    #basics ul.columns {
+        flex-wrap: wrap;
+    }
+
+    #basics ul.columns li {
+        height: fit-content;
+        width: 40%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: left;
+    }
+
+    #basics ul.columns a {
+        height: fit-content;
+    }
+
+    #links .three ul.columns li {
+        width: 28%;
     }
 
     .hide-landscape {
