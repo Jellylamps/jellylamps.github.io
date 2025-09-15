@@ -1,0 +1,161 @@
+:root {
+    --text: #222222;
+    --highlight: #2020e4;
+    --background: #dddddd;
+    --white: #ffffff;
+}
+
+html {
+    background: var(--background);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+#pages {
+    background: var(--background);
+}
+
+#pages ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#pages li {
+    text-align: center;
+    flex: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+#pages a {
+    color: var(--text);
+}
+
+#pages a.current {
+    color: var(--highlight);
+    border-bottom: 1px solid var(--highlight);
+}
+
+main {
+    background: var(--white);
+    padding: 30px;
+}
+
+.text-block {
+    width: 90%;
+    margin: 40px auto;
+    background: var(--background);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.text-block li {
+    margin: 10px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+.indent {
+    margin-left: 25px;
+}
+
+section.always {
+    justify-content: space-around;
+}
+
+section.always section {
+    max-width: calc(50%);
+    text-align: center;
+}
+
+section.always section img {
+    display: block;
+    max-width: 90%;
+    margin: auto;
+}
+
+.always {
+    display: flex;
+}
+
+textarea {
+    width: 90%;
+    min-height: 300px;
+    border: 1px solid var(--background);
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    padding: 3px 10px;
+    resize: none;
+    overflow-y: scroll;
+}
+
+#list {
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+#list .text-block {
+    max-width: calc(50% - 60px);
+    text-align: center;
+    margin: 10px;
+}
+
+#list img {
+    max-width: 90%;
+}
+
+.info {
+    margin: auto;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.info p {
+    margin: 8px auto;
+}
+
+
+@media only screen and (orientation: landscape) and (min-width: 768px) {
+    .columns {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #pages {
+        padding: 0 10%;
+        margin: 0;
+    }
+
+    #pages a {
+        padding: 5px;
+    }
+
+    main {
+        padding: 30px 15%;
+    }
+
+    section.always section {
+        min-width: 30%;
+    }
+
+    #list .text-block {
+        max-width: calc((100% / 3) - 60px);
+    }
+}
