@@ -108,16 +108,16 @@ main {
     position:relative;
 }
 
-#ball, #circle {
-    height: 30px;
-    width:30px;
+#ball {
+    height: 50px;
+    width:50px;
     background:var(--circle-color);
     border-radius:50px;
     position:relative;
-    left:35%;
+    background-color: red;
 }
 
-#ball {
+.bounce {
     animation-name: fun;
     animation-duration: 4s;
     animation-iteration-count: infinite;
@@ -127,6 +127,19 @@ main {
 #txt-donation {
     max-width:40%;
 }
+
+#bar {
+    height: 40px;
+    width: 100%;
+    margin-top: 10px;
+    border:2px solid var(--primary-color);
+}
+ #progress {
+    height: 100%;
+    width: 0;
+    max-width: 100%;
+    background: red;
+ }
 
 #thermometer {
     width:25%;
@@ -148,20 +161,24 @@ h2 {
 @keyframes fun {
     0% {
         background-color: red;
-        top:0;
         left:0;
     }
-    20% {background-color: orange;}
-    40% {background-color: yellow;}
-    60% {background-color:aqua;
-        left:100px;
-        top:200px;
+    12.5% {background-color: orange;}
+    25% {background-color: yellow;}
+    37.5% {background-color:aqua;
     }
-    70% {background-color: green;}
-    80% {background-color: indigo;}
+    50% {background-color: green;
+        left:100px;
+    }
+    62.5% {background-color: blue;}
+    75% {
+        background-color: purple;
+    }
+    87.5% {
+        background-color: fuchsia;
+    }
     100% {
-        background-color: violet;
-        top:0px;
+        background-color: red;
         left:0;
     }
   }
@@ -241,6 +258,14 @@ footer p {
 .sad {
     color: navy;
     background: blue;
+}
+
+.error {
+    color: red;
+}
+
+input {
+    max-width: 90%;
 }
 
 #map {
