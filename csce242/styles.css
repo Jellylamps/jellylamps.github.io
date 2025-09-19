@@ -75,13 +75,12 @@ h2 {
     }
 
     #content a {
-        flex: 1;
         margin-left: 10px;
         margin-right: 10px;
+        max-width: calc((100% / 3) - 20px);
     }
 
     .assignment {
-        max-width: fit-content;
         padding: 25px;
         margin: auto;
     }
