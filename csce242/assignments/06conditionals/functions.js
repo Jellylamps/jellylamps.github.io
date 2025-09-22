@@ -63,5 +63,5 @@ document.getElementById("exercise-2").onclick = () => {
     e2.classList.remove("hide");
     e1.classList.add("hide");
     displayTime();
-    timeInterval = setInterval(displayTime, 60000);
+    timeInterval = setInterval(displayTime, 500);
 }
