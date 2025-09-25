@@ -1,0 +1,220 @@
+:root {
+    --day: #9ec0f6;
+    --night: #000022;
+    --text: #992364;
+    --cloud: #ffffff;
+    --leaves: #14a631;
+    --trunk: #661d04;
+    --sun: #eae315;
+    --moon: #ffee99;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: var(--day);
+    color: var(--text);
+    position: relative;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.columns {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* This art is all mine */
+
+#clouds {
+    margin: 40px 0;
+    max-width: 100%;
+}
+
+.cloud {
+    height: 90px;
+    width: 100px;
+    position: relative;
+    opacity: 80%;
+}
+
+.cloud-left {
+    height: 50px;
+    width: 70px;
+    position: absolute;
+    bottom: 0;
+    left: -20%;
+    border-radius: 80%;
+    background: var(--cloud);
+}
+
+.cloud-center {
+    height: 90px;
+    width: 100px;
+    border-radius: 100%;
+    background: var(--cloud);
+}
+
+.cloud-right {
+    height: 50px;
+    width: 60px;
+    position: absolute;
+    bottom: 11%;
+    right: -20%;
+    border-radius: 100%;
+    background: var(--cloud);
+}
+
+#trees {
+    max-width: 100%;
+}
+
+.tree {
+    height: 160px;
+    width: 100px;
+    position: relative;
+    margin: 20px;
+}
+
+.tree-trunk {
+    height: 60px;
+    width: 20px;
+    position: absolute;
+    top: 62.5%;
+    left: 40%;
+    background: var(--trunk);
+}
+
+.tree-bottom {
+    height: 40px;
+    width: 130px;
+    position: absolute;
+    bottom: 37.5%;
+    left: -15%;
+    border-radius: 40px;
+    background: var(--leaves);
+}
+
+.tree-center {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    background: var(--leaves);
+}
+
+.tree-top {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: -5%;
+    left: 40%;
+    border-radius: 100%;
+    background: var(--leaves);
+}
+
+.tree-bit {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 27.5%;
+    left: -5%;
+    border-radius: 15px;
+    background: var(--leaves);
+}
+
+#sun {
+    height: 130px;
+    width: 130px;
+    position: absolute;
+    right: 15%;
+    top: 10%;
+    border-radius: 100%;
+    background: var(--sun);
+}
+
+#moon {
+    height: 130px;
+    width: 130px;
+    position: absolute;
+    right: 15%;
+    top: 10%;
+    border-radius: 100%;
+    background: var(--moon);
+}
+
+#dark-side {
+    height: 105px;
+    width: 105px;
+    position: absolute;
+    right: 28.5%;
+    top: 19%;
+    border-radius: 100%;
+    background: var(--night);
+}
+
+.hide {
+    display: none;
+}
+
+
+@media only screen  and (max-width: 870px) {
+    .cloud {
+        height: 45px;
+        width: 50px;
+    }
+
+    .cloud-left {
+        height: 25px;
+        width: 35px;
+    }
+
+    .cloud-center {
+        height: 45px;
+        width: 50px;
+    }
+
+    .cloud-right {
+        height: 25px;
+        width: 30px;
+    }
+
+    .tree {
+        height: 80px;
+        width: 50px;
+        margin: 10px;
+    }
+
+    .tree-trunk {
+        height: 30px;
+        width: 10px;
+    }
+
+    .tree-bottom {
+        height: 20px;
+        width: 65px;
+    }
+
+    .tree-center {
+        height: 50px;
+        width: 50px;
+    }
+
+    .tree-top, .tree-bit {
+        height: 15px;
+        width: 15px;
+    }
+
+    #sun, #moon {
+        height: 65px;
+        width: 65px;
+    }
+
+    #dark-side {
+        height: 53px;
+        width: 53px;
+    }
+}
