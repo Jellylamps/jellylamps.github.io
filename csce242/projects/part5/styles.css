@@ -1,5 +1,6 @@
 :root {
     --text: #230252;
+    --faded: #5459a0;
     --highlight: #2020e4;
     --block: #badbff;
     --background: #acb5fb;
@@ -180,6 +181,11 @@ textarea {
 
 .dense {
     margin: 10px auto;
+}
+
+.faded {
+    color: var(--faded);
+    padding: 4px 8px;
 }
 
 .hide-small {
