@@ -1,7 +1,8 @@
 :root {
     --background: #d49ef6;
-    --block: #ffd8f5;
+    --block: #e02bb3;
     --text: #370555;
+    --shadow: #37055588;
 }
 
 body {
@@ -9,4 +10,86 @@ body {
     text-align: center;
     background: var(--background);
     color: var(--text);
+    position: relative;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    max-width: 85%;
+    margin: auto;
+}
+
+.hide {
+    display: none;
+}
+
+div {
+    position: relative;
+    max-width: 22%;
+    border-radius: 10px;
+    border: 2px solid var(--text);
+    background: var(--block);
+    cursor: pointer;
+}
+
+img {
+    max-width: calc(100% - 30px);
+    padding: 15px;
+}
+
+img:hover + label.hide, label:hover {
+    display: block;
+    cursor: pointer;
+}
+
+label {
+    position: absolute;
+    background: var(--background);
+    bottom: 15%;
+    left: -5%;
+    padding: 3px 0;
+    width: 110%;
+    border-top: 1px solid var(--text);
+    border-bottom: 1px solid var(--text);
+}
+
+a {
+    text-decoration: none;
+    color: var(--block);
+}
+
+#popup {
+    position: absolute;
+    top: 0;
+    left: calc(30% - 2px);
+    width: 40%;
+    background: var(--background);
+    border-radius: 10px;
+    border: 2px solid var(--text);
+    box-shadow: 5px 5px 10px var(--shadow);
+}
+
+#close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+@media only screen and (orientation: portrait) {
+    .columns {
+        flex-wrap: wrap;
+    }
+
+    div {
+        max-width: 44%;
+        margin: 20px 0;
+    }
+
+    #popup {
+        width: 70%;
+        left: calc(15% - 2px);
+        top: 15%;
+    }
 }
