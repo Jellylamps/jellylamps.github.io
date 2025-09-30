@@ -88,6 +88,10 @@ main {
     text-align:center;
 }
 
+.dog {
+    width: fit-content;
+}
+
 .hidden {
     display:none;
 }
@@ -273,6 +277,10 @@ input {
     height:500px;
 }
 
+.transparent {
+    visibility: hidden;
+}
+
 
 /* Medium screens */
 @media only screen and (min-width: 800px) { 
@@ -293,7 +301,7 @@ input {
     }
 
     .examples section {
-        max-width:30%;
+        /*max-width:30%;*/
         padding:10px;
         margin:0;
     }
@@ -367,7 +375,7 @@ input {
     }
 
     .examples section {
-        width:18%;
+        /*width:18%;*/
         padding:10px;
         margin:0;
     }
