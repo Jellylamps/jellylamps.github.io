@@ -1,0 +1,38 @@
+[
+    {
+        "_id": 1,
+        "name": "Crimped Tetrahedon",
+        "angle": 122.601252,
+        "symmetry": "Tetrahedral",
+        "discovery": "me",
+        "faces": 16,
+        "vertices": 22,
+        "edges": 36,
+        "families": ["tetrahedral", "crimped"],
+        "img": "CTetra.jpg"
+    },
+    {
+        "_id": 2,
+        "name": "Standard Crimped Cube",
+        "angle": 134.351303,
+        "symmetry": "Octahedral",
+        "discovery": "me",
+        "faces": 30,
+        "vertices": 44,
+        "edges": 72,
+        "families": ["cubic", "crimped"],
+        "img": "CCube.jpg"
+    },
+    {
+        "_id": 3,
+        "name": "Alternating Crimped Cube",
+        "angle": 134.351303,
+        "symmetry": "Tetrahedral",
+        "discovery": "me",
+        "faces": 18,
+        "vertices": 20,
+        "edges": 36,
+        "families": ["cubic", "crimped"],
+        "img": "CCube.jpg"
+    }
+]
