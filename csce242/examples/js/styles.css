@@ -63,6 +63,27 @@ main {
 /* Slideshow */
 #slideshow img {
     max-width:100%;
+    position: relative;
+}
+
+#prev {
+    position: absolute;
+    background: #ffffffaa;
+    color: black;
+    font-size: 3em;
+    top: 40%;
+    left: 5%;
+    padding: 10px;
+}
+
+#next {
+    position: absolute;
+    background: #ffffffaa;
+    color: black;
+    font-size: 3em;
+    top: 40%;
+    right: 5%;
+    padding: 10px;
 }
 
 .links {
@@ -341,6 +362,10 @@ input {
 
     #main-nav li:not(:last-child) {
         border-right: 1px solid white;
+    }
+
+    #breweries {
+        flex-wrap: wrap;
     }
 
     .gallery {
