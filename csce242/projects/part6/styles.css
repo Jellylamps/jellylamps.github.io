@@ -156,10 +156,11 @@ textarea {
 
 #list img {
     max-height: 150px;
+    margin: auto 0;
     margin-left: 8%;
 }
 
-#crimped-tetrahedron {
+#list div:first-child {
     cursor: pointer;
 }
 

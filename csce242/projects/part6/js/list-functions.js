@@ -26,7 +26,7 @@ const showList = async() => {
 
         const img = document.createElement("img");
         div.append(img);
-        img.src = `json/images/${shape.img}`;
+        img.src = `https://jellylamps.github.io/csce242/projects/json/images/${shape.img}`;
 
         const section = document.createElement("section");
         div.append(section);
