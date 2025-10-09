@@ -1,7 +1,7 @@
 const list = document.getElementById("list");
 
 const getList = async() => {
-    const url = "https://jellylamps.github.io/csce242/projects/part6/json/polyhedra.json";
+    const url = "https://jellylamps.github.io/csce242/projects/json/polyhedra.json";
 
     try {
         const response = await fetch(url);
