@@ -35,12 +35,16 @@ img {
 }
 
 /* Links */
-a {
+a, .standalone {
     text-decoration: none;
     color: #7f009c;
     display: block;
     margin: auto;
     margin-top: 20px;
+}
+
+.in-block {
+    width: fit-content;
 }
 
 /* Typography */
@@ -78,10 +82,14 @@ h2 {
         background: linear-gradient(#ff81cd, #fa97cf, #fa97cf, #ff81cd, #ff81cd, #ff81cd, #fa97cf);
     }
 
-    #content a {
+    #content a:not(.in-block), .standalone {
         margin-left: 10px;
         margin-right: 10px;
         width: calc((100% / 3) - 20px);
+    }
+
+    #content a.in-block {
+        width: fit-content;
     }
 
     .assignment {
