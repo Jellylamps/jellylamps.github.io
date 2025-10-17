@@ -1,0 +1,61 @@
+<!--Thomas Zwetsloot CSCE 242-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Project Prototype | Submission</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <nav id="pages">
+            <section id="borgar" class="hide-large">
+                <div></div>
+                <div></div>
+                <div></div>
+            </section>
+            <ul id="selection" class="columns hide-small">
+                <li><div><a href="index.html">Home</a></div></li>
+                <li><div><a href="processes.html">Processes</a></div></li>
+                <li><div><a href="list.html">Monodihedral List</a></div></li>
+                <li><div><a href="credits.html">Credits</a></div></li>
+                <li><div class="current"><a href="#">Submit a Discovery</a></div></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Submission</h2>
+            <div class="text-block">
+                <h2>Please supply a descriotion or link to information you think should be added to this site.</h2>
+                <h3>This can include:</h3>
+                <ul>
+                    <li>a newly discovered monodihedral polyhedron</li>
+                    <li>additional facts about one or a family of polyhedra</li>
+                    <li>a correction to information on this site, like a polyhedron's traits or an incorrect credit</li>
+                </ul>
+                <form method="POST" id="contact-form">
+
+                    <input type="hidden" name="access_key" value="a044c59b-8358-4d1a-962a-fc7bf45077a5">
+
+                    <p class="short-input">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" required>
+                    </p>
+                    
+                    <p class="short-input">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" required>
+                    </p>
+                    
+                    <p><textarea name="message" placeholder="description or link" required></textarea></p>
+                    
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                    <button type="submit">Submit</button>
+
+                    <div id="contact-result"></div>
+
+                </form>
+            </div>
+        </main>
+        <script src="js/toggle-nav.js"></script>
+        <script src="js/submit.js"></script>
+    </body>
+</html>
